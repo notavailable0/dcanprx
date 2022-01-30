@@ -28,7 +28,7 @@ class StatesAddTokenToBd(StatesGroup):
     send_token_text = State()
 
 
-bot = Bot(token='2073805665:AAFOmin2MoyFag_LtFDIvvTpfTB49g1NPto')
+bot = Bot(token='your_token')
 dp = Dispatcher(bot, storage=MemoryStorage())
 dp.middleware.setup(LoggingMiddleware())
 
