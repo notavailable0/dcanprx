@@ -1,10 +1,10 @@
 import sqlite3
 
-path_to_db = 'fucking_bot_db'
+path_to_db = 'bot_db'
 
 def create_bdx():
     with sqlite3.connect(path_to_db) as db:
-        # Создание БД с хранением данных about users apks
+        # data about users apks
         try:
             db.execute("CREATE TABLE storage_tokens("
                        "token TEXT, rsa_pub TEXT, rsa_priv TEXT)")
